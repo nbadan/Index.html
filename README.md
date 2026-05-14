@@ -1,25 +1,24 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVO 7 Sync | Terminal</title>
-    <style>
-        body { background-color: #0d1117; color: #58a6ff; font-family: 'Courier New', Courier, monospace; padding: 20px; }
-        .terminal-container { border: 1px solid #30363d; padding: 20px; border-radius: 6px; background-color: #161b22; }
-        .status-on { color: #3fb950; }
-        .header { border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 20px; }
-        input, button { background: #0d1117; border: 1px solid #30363d; color: #c9d1d9; padding: 10px; margin-top: 10px; }
-        button:hover { background: #30363d; cursor: pointer; }
-    </style>
-</head>
-<body>
-    <div class="terminal-container">
-        <div class="header">
-            <h1>#REVO7SYNC_TERMINAL</h1>
-            <p>SYSTEM STATUS: <span class="status-on">ONLINE</span> | REGION: TEXAS_SANDBOX</p>
-        </div>
+# REVO 7 Sync | Terminal Ecosystem
+**Version:** 1.0.4-Beta  
+**Status:** Active Deployment  
+
+## Project Overview
+REVO 7 Sync is a mobile-first architectural shell designed for syncing professional, "Non-Mimic Certified" audio assets to social media content pipelines.
+
+## Technical Specifications
+*   **Engine:** REVO 7 (Forensic-Grade Synthesis)
+*   **Hosting:** Vercel (Edge-Optimized)
+*   **Infrastructure:** NPU-accelerated audio processing
+*   **Target Region:** Texas Sandbox (San Antonio Beta Cohort)
+
+## Deployment Configuration
+To maintain the integrity of the terminal, ensure the `vercel.json` in the root uses the following routing:
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
 
         <div id="engine-status">
             <h3>[REVO 7 Engine Stats]</h3>
